@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MH Trading</title>
+    <style>
+        :root {
+            --primary-blue: #0A1A3D;
+            --accent-blue: #1A2F6D;
+            --gold: #FFD700;
+            --light-bg: #F5F7FA;
+            --text-dark: #2D3436;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: var(--primary-blue);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .contact-hero {
+            padding: 4rem 5%;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 4rem 5%;
+            gap: 3rem;
+        }
+
+        .contact-form {
+            flex: 1;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .contact-info {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: var(--gold);
+            color: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+
+        .social-links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        @media (max-width: 1024px) {
+            .hero-section, .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-container img {
+                height: 400px;
+                margin-top: 2rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="MH Trading Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="contact-hero">
+        <h1>Get in Touch</h1>
+        <p>We're here to help you with your trading journey</p>
+    </div>
+
+    <div class="contact-container">
+        <form class="contact-form" action="https://formspree.io/f/xyzkjvyq" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"  
+                       placeholder="961 ********" 
+                       required>
+            </div>
+        
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+            
+            <div class="social-links">
+                <a href="https://t.me/mhtradings" target="_blank">
+                    <img src="images/telegram.png" alt="Telegram">
+                </a>
+                <a href="https://www.tiktok.com/@mhmdelhajj2" target="_blank">
+                    <img src="images/tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://wa.link/0fzstm" target="_blank">
+                    <img src="images/Whatsapp.jpg" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

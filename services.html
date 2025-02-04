@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - MH Trading</title>
+    <style>
+        :root {
+            --primary-blue: #0A1A3D;
+            --accent-blue: #1A2F6D;
+            --gold: #FFD700;
+            --light-bg: #F5F7FA;
+            --text-dark: #2D3436;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: var(--primary-blue);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .hero-services {
+            padding: 4rem 5%;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 5%;
+        }
+      
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 1rem;
+            margin-left: 35px;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 4rem 5%;
+            background: var(--light-bg);
+        }
+        .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-blue);
+    margin-top: 1rem;
+}
+.cta-button:hover {
+    background-color: var(--gold);
+    color: var(--primary-blue);
+    border-color: var(--gold);
+    transform: translateY(-2px);
+}
+@media (max-width: 1024px) {
+            .hero-section, .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-container img {
+                height: 400px;
+                margin-top: 2rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .service-icon {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 1rem;
+            .cta-button {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+}
+        }
+            
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="MH Trading Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero-services">
+        <h1>Professional Forex Trading Solutions</h1>
+        <p>Personalized services tailored for individual traders</p>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="images/Analysis.jpg" alt="Analysis" class="service-icon">
+            <h3>Market Analysis & Signals</h3>
+            <p>Receive daily expert-curated trading signals with detailed technical and fundamental analysis. Our precise entry/exit points help you make informed decisions.</p>
+        </div>
+
+
+
+        <div class="service-card">
+            <img src="images/Management.jpg" alt="Management" class="service-icon">
+            <h3>Portfolio Management</h3>
+            <p>Professional account management service with transparent reporting. We trade your capital using proven low-risk strategies while you maintain full control.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/support.jpg" alt="Support" class="service-icon">
+            <h3>24/7 Trading Support</h3>
+            <p>Direct access to expert guidance for trade execution, strategy adjustments, and market updates. Never trade alone with our personalized support.</p>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>Start Your Trading Journey Today</h2>
+        <p>Get personalized solutions that adapt to your financial goals</p>
+        <a href="Contact.html" class="cta-button">Schedule Consultation</a>
+    </div>
+</body>
+</html>

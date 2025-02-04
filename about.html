@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MH Trading</title>
+    <style>
+        :root {
+            --primary-blue: #0A1A3D;
+            --accent-blue: #1A2F6D;
+            --gold: #FFD700;
+            --light-bg: #F5F7FA;
+            --text-dark: #2D3436;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+        }
+     
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: var(--primary-blue);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            padding: 4rem 5%;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+            color: white;
+        }
+
+        .container-left {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .container-right-flag {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .container-right-flag img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .centered {
+            text-align: center;
+            padding: 4rem 5%;
+            background: white;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-links img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 1024px) {
+            .hero-section, .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-container img {
+                height: 400px;
+                margin-top: 2rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img {
+                margin-bottom: 1rem;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container-right-flag img {
+                height: 300px;
+                margin-top: 2rem;
+            }
+
+            h1, h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="MH Trading Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="container-left">
+            <h1>About Us</h1>
+            <p>Welcome to MH Trading, a Lebanon-based forex trading business dedicated to helping individuals navigate the financial markets. Led by a passionate and experienced trader, MH Trading provides expert insights, advanced trading tools, and personalized strategies to help clients make informed decisions. Whether you're new to forex or looking to refine your skills, we offer a transparent and seamless trading experience tailored to your needs. With a strong focus on education and innovation, MH Trading is committed to guiding you toward financial success.</p>
+        </div>
+        <div class="container-right-flag">
+            <img src="images/Trading-leb.jpg" alt="Lebanon Flag with Trading Elements">
+        </div>
+    </div>
+
+  
+        </div>
+    </div>
+</body>
+</html>
